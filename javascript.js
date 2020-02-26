@@ -16,3 +16,16 @@
  function mouseOver() {
    document.getElementById("p5").innerHTML="Domaći konj (konj, lat. Equus (Equus) caballus; sin. Equus ferus caballus, Equus caballus caballus, Equus caballus) je veliki četveronožni sisavac, pripadnik roda Equus. Konji su odavno bili jedna od najvažnijih domaćih životinja  koja se uzgaja u vrlo velikom broju raznih pasmina, a živi širom svijeta.";
  }
+ var audio = document.getElementById("audio");
+ var img = document.getElementById("m4");
+ 
+ document.addEventListener("click", function(e){
+    if( e.target === img ){
+      audio.src = "zvukkonja.mp3";
+      audio.play();
+    }
+    else{
+     audio.src = "zvukkonja2.mp3";
+     audio.play();
+   }
+ },false);
