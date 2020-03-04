@@ -29,3 +29,15 @@
      audio.play();
    }
  },false);
+var izborOvce=document.getElementById("zivotinja").nodeValue;
+
+if (izborOvce==='ovca') {
+  document.getElementById("message").textContent="Točan odgovor"
+
+
+}
+else {
+  document.getElementById("message").textContent="Netočan odgovor"
+}
+};
+naPritisakButtona.addEventListener("click",naPritisakButtona);
